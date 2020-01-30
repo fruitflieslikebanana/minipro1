@@ -1,6 +1,8 @@
 <!--pages/home/home.wxml-->
 
 <text class="title">成语接龙</text> 
+<view>知识点二</view>
+<view>kkkkkkkkk</view>
 <button type="warn">为所欲为</button>
 <button type="defaule">数不胜数</button>
 <button type="primary"bindtap="clickButton">微乎其微</button>
