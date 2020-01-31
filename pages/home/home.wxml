@@ -1,7 +1,12 @@
 <!--pages/home/home.wxml-->
+<!--小程序数据绑定-:{{}}->Mastache-->
+<view>hello {{name}}</view>
+<view>年龄{{age}}</view>
 
-<text class="title">成语接龙</text> 
-<button type="warn">为所欲为</button>
-<button type="defaule">数不胜数</button>
-<button type="primary"bindtap="clickButton">微乎其微</button>
-<button disabled="true" loading="true">贼喊捉贼</button>
+<!--2.列表 wx:for=" "-->
+<view wx:for="{{student}}">{{item.name}}--{{item.color}}</view>
+
+<!--3.事件监听-->
+<view>click:{{counter}}</view>
+<button size='mini' type="warn" bindtap='handleBtnClick'> + </button> <!--handleBtnClick是自定义的-->
+<button size='mini' type="primary" bindtap='handleSubstraction'> - </button> 
